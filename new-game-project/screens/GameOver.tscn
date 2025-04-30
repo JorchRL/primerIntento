@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://ba1uxu8q0x3nm"]
+
+[sub_resource type="GDScript" id="GDScript_kv6ud"]
+script/source = "extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="GameOver" type="Node2D"]
+script = SubResource("GDScript_kv6ud")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "GAME OVER
+"
